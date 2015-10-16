@@ -1,0 +1,31 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="etf-8">
+		<link href="css/slideshow.css" rel='stylesheet'>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<title>Slideshow</title>
+	</head>
+<body>
+	<h1>Slideshow Javascript Assignment</h1>
+	<section id="slide">
+		<img id="showing" src="img/wrigley.jpeg">
+	</section>
+	<section>
+		<p id="caption">Wrigley Field</p>
+	</section>
+	<button onclick="stop()">Stop Autoplay</button>
+	<section id="slideshow">
+		<img id="0" src="img/wrigley.jpeg" onclick="show1()">
+		<img id="1" src="img/canal.jpeg" onclick="show2()">
+		<img id="2" src="img/chicago.jpeg" onclick="show3()">
+		<img id="3" src="img/tour.jpeg" onclick="show4()">
+		<img id="4" src="img/skyline.jpeg" onclick="show5()">
+		<img id="5" src="img/skydeck.jpeg" onclick="show6()">
+	</section>
+	<p class="previous" onclick="previous()">&#8249</p>
+	<p class="next" onclick="next()">&#8250</p>
+</body>
+	<script src="javas/javaquery.js"></script>
+</html>
