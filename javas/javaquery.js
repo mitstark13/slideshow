@@ -20,7 +20,9 @@ function timer() {
 }
 function stop() {
 	clearInterval(autoplay)
-	document.getElementById(counter - 1).style.opacity = "1"
+	document.getElementById("showing").src = images[counter]
+	document.getElementById("caption").innerHTML = captions[counter]
+	document.getElementById(counter).style.opacity = "1"
 }
 document.getElementById(counter).style.opacity = "1"
 function previous() {
