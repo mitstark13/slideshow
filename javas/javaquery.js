@@ -4,6 +4,8 @@ document.getElementById("4").getAttribute("src"), document.getElementById("5").g
 var captions = ["Wrigley Field", "Tour on the Canal", "The Bean", "On the Boat", "Skyline", "Skybox"]
 var counter = 0
 
+document.getElementById(counter).style.opacity = "1"
+
 var autoplay = setInterval(timer, 1000);
 
 function timer() {
@@ -18,13 +20,14 @@ function timer() {
 		document.getElementById(5).style.opacity = ".5"
 	}
 }
+
 function stop() {
 	clearInterval(autoplay)
 	document.getElementById("showing").src = images[counter]
 	document.getElementById("caption").innerHTML = captions[counter]
 	document.getElementById(counter).style.opacity = "1"
 }
-document.getElementById(counter).style.opacity = "1"
+
 function previous() {
 	if (counter != 0) {
 		counter -= 1;
@@ -39,6 +42,7 @@ function previous() {
 	document.getElementById(counter).style.opacity = "1";
 	document.getElementById(counter).style.transition = "opacity 1s ease-in"
 }
+
 function next() {
 	if (counter != 5) {
 		counter += 1;
@@ -53,6 +57,7 @@ function next() {
 	document.getElementById(counter).style.opacity = "1";
 	document.getElementById(counter).style.transition = "opacity 1s ease-in"
 }
+
 function show1() {
 	document.getElementById("showing").src=images[0]
 	document.getElementById("caption").innerHTML = captions[0]
